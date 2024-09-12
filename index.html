@@ -146,9 +146,75 @@
                         <div>Ideal for flat/gradientless images with hard edges such as logos</div>
                     </dd>
                     <dt>JPG</dt>
-                    <!-- Where I left off -->
+                    <dd>
+                        <div>Stands for "Joint Photographic Experts Group"</div>
+                        <div>Standard format for containing lossy and compressed image data</div>
+                        <div>Maintains reasonable image quality with millions of colours despite reduction in file size</div>
+                        <div>Designed to efficiently store and compress images and artwork</div>
+                        <div>Good at compressing images with a lot of colours and gradients</div>
+                    </dd>
+                    <!--Add more formats later but not important rn-->
                 </dl>
             </dd>
+            <dt><div>The Image tag</div></dt>
+            <dd>
+                <div>Represented as img and places an image on the page</div>
+                <div>Attributes src and alt are required</div>
+                <dl>
+                    <dt><div>Attributes of img tag</div></dt>
+                    <dd>
+                        <div>src: URL of image</div>
+                        <div>alt: short description of image</div>
+                        <div>height: height of image in pixels or %</div>
+                        <div>width: width of image in pixels or %</div>
+                    </dd>
+                </dl>
+            </dd>
+            <dt><div>Favicon Images</div></dt>
+            <dd>
+                <div>Favicon, aka. favourite icon, is the small image displayed next to the title in the tab</div>
+                <div>Small resolution image and should be high contrast</div>
+                <div>Any image format can be used</div>
+                <div>"link" tag is used to link favicon image to the page and should be placed in head section</div>
+            </dd>
+            <dt><div>Links and Anchors</div></dt>
+            <dd>
+                <div>HTML links or hyperlinks, used to connect web pages and allow the user to navigate between pages or resources</div>
+                <div>Created using the "a" tag with "href"</div>
+                <div>Both text and images can be used as a link</div>
+                <div>Relative link uses page name as a target and is local to the host</div>
+                <div>Absolute link uses a URL as the target and must be complete using the protocol (https://)</div>
+                <div>Internal/Anchor link is useful for long pages and is used to link to another location on the same page</div>
+                <div>Example of Relative Link: Will be added soon</div>
+                <div>Example of Absolute Link:
+                    <a href="https://www.youtube.com/watch?v=uHgt8giw1LY&pp=ygUgbmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXAgbm8gYWQ%3D">Example Absolute Link</a>
+                    </div>
+                <div>Example of Internal Link:
+                    <a href="#top">Go to the top</a>
+                </div>
+            </dd>
+            <dt><div>The Meta Tag</div></dt>
+            <dd>
+                <div>The "meta" element provides meta-information about the page</div>
+                <div>Includes things such as description, character set, viewport settings, and refresh rates</div>
+                <div>Always goes inside the head element and metadata are passed as name/value pairs</div>
+                <div>Meta tag attributes:</div>
+                <ul>
+                    <li>name: specifies a name for the metadata</li>
+                    <li>content: specifies value associated with the name or http-equiv attribute</li>
+                    <li>charset: specifies character set encoding</li>
+                    <li>http-equiv: specifies some action to perform</li>
+                </ul>
+                <div>Exmaples:</div>
+                <ul>
+                    <li>use "width=device-width" to make page look good on all devices</li>
+                    <li>http-equiv attribute used to simulate a response header</li>
+                    <li>'http-equiv="refresh" content="5"' refreshes the page every 5 seconds</li>
+                    <li>'http-equiv="refresh" content="10; url=example.link"' redirects the user to a new page after 10 sec delay</li>
+                    <li>Another example is for specific tool authentication</li>
+                </ul>
+            </dd>
+                    <!-- Where I left off -->
         </dl>  
 
     </section>
