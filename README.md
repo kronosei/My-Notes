@@ -1,1 +1,2 @@
-This is just a repo for all my stuff
+This is just a repo for all my notes website
+
