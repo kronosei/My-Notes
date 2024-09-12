@@ -18,24 +18,138 @@
         <!-- Notes Section -->
         <div style="font-size:30px; font-weight:bold;">HTML Notes</div>
         <dl>
-            <dt><div style="font-style:normal;">HTML stands for Hypertext Markup Language</div></dt>
-            <dt><div style="font-style:normal;">Each block of code is enclosed by 2 tags on either end</div></dt>
-            <dt><div style="font-style:normal;">Tags are enclosed in less than or greater than symbols</div></dt>
-            <dt><div style="font-style:normal;">The closing tag will have a forwardslash(/)</div></dt>
+            <dt><div>HTML stands for Hypertext Markup Language</div></dt>
+            <dt><div>Each block of code is enclosed by 2 tags on either end</div></dt>
+            <dt><div>Tags are enclosed in less than or greater than symbols</div></dt>
+            <dt><div>The closing tag will have a forwardslash(/)</div></dt>
             <dt>
-                <div style="font-style:normal;">Different types of tags</div>
+                <div>Skeleton tags</div>
             </dt>
             <dd>
-                <div style="font-style:normal;">html: Designates that this file is an html file</div>
-                <div style="font-style:normal;">head: An introduction to the webpage that contain settings such as the webpage title</div>
-                <div style="font-style:normal;">title: Designates the title of the webpage which will be shown in the tab of the webpage
+                <div>html: Designates that this file is an html file</div>
+                <div>head: An introduction to the webpage that contain settings such as the webpage title</div>
+                <div>title: Designates the title of the webpage which will be shown in the tab of the webpage
                         in the title bar
                     </div>
-                <div style="font-style:normal;">body: Designates the main section of the webpage were all the content is</div>
+                <div>body: Designates the main section of the webpage were all the content is</div>
             </dd>
-            <div>Character Sets</div>
-        </dl>
-        
+            <dt><div>Character Sets</div></dt>
+            <dd>
+                <div>Character encoding system that consists of a code that pairs each character from a list</div>
+                <div>UTF-8: Unicode is most common for encoding</div>
+                <div>To specify character set, use meta tag</div>
+            </dd>
+            <dt><div>Comments</div></dt>
+            <dd>
+                <div>Comment tag is used for comments and is ignored by browser</div>
+                <div>Comment tag is < ! -- text -- ></div>
+            </dd>
+            <dt><div>Colours</div></dt>
+            <dd>
+                <div>Colours can be used for many things like background, text, and borders</div>
+                <div>Each colour represented by 6 character hex number like #00ff00</div>
+                <div>Colour names like black or blue can be used</div>
+            </dd>
+            <dt><div>Nested Tags and Header Tags</div></dt>
+            <dd>
+                <div>Multiple tags can be nested and should never overlap</div>
+                <div>Header Tags can be used for page and sections headings</div>
+                <div>h1 is largest with h6 being smallest by default</div>
+            </dd>
+            <dt><div>Page Section Tags</div></dt>
+            <dd>
+                <div>br: Simple line break</div>
+                <div>div: Division that will share common characteristics and stand on its own</div>
+                <div>p: Paragraph that will share common characteristics and will have an empty line at top and bottom</div>
+                <div>span: Text sharing common characteristics with no line breaks at all</div>
+            </dd>
+            <dt><div>Semantic Tags</div></dt>
+            <dd>
+                <div>Describe the meaning of the section. Ex. article, aside, header, footer</div>
+                <div>Almost all behave like div</div>
+                <div>Tags like figure/figcaption and mark behave differently</div>
+                <div>Figure used to associate an image and a caption while mark highlights text</div>
+                <div>Makes code easier to read and understand</div>
+                <div>Summary tag defines a visible heading for hte details element as shown below</div>
+                <details>
+                    <summary>Example Summary</summary>
+                    <div>Example detail</div>
+                </details>
+            </dd>
+            <dt><div>Horizontal Rule</div></dt>
+            <dd>
+                <div>Used to make a horizontal bar across width of the screen</div>
+                <div>Good for separating sections</div>
+            </dd>
+            <dt><div>Fonts</div></dt>
+            <dd>
+                <div>Fonts and colours can be defined using the style attribute</div>
+            </dd>
+            <dt><div>Text Alignment</div></dt>
+            <dd>
+                <div>Allows you to change where the text is aligned on the webpage</div>
+            </dd>
+            <dt><div>Lists/Unordered Lists</div></dt>
+            <dd>
+                <div>Great way to keep a page organized and are indented from alignment</div>
+                <div>Can contain one or more items and use bullet points to list out the items</div>
+                <div> li tag is used to denote an item while the ul tag is used to denot the unordered list</div>
+                <ul>
+                    <li><div>Example</div></li>
+                </ul>
+            </dd>
+            <dt><div>Ordered Lists</div></dt>
+            <dd>
+                <div>Uses the ol tag and uses numerical characters to list items</div>
+                <ol>
+                    <li><div>Example 1</div></li>
+                    <li><div>Example 2</div></li>
+
+                </ol>
+            </dd>
+            <dt><div>Nested Lists</div></dt>
+            <dd>
+                <div>Lists can be nested within another list</div>
+                <div>Each nested list will be indented from the one before</div>
+                <ul>
+                    <li><div>Example Superlist</div>
+                        <ul>
+                            <li><div>Example Nested List</div></li>
+                        </ul>
+                    </li>
+                </ul>
+            </dd>
+            <dt><div>Definition Lists</div></dt>
+            <dd>
+                <div>A type of list that has a title line and a data area</div>
+                <div>Title line uses dt tag and data area uses dd tag</div>
+            </dd>
+            <dt>Image Formats</dt>
+            <dd>
+                <div>There are 7 main supported types of images for the web</div>
+                <div>There are other types but they have limited to no support on some browsers</div>
+                <dl><div>Types of Image Formats</div>
+                    <dt>GIF</dt>
+                    <dd>
+                        <div>Stands for "Graphics Interchage Format"</div>
+                        <div>Raster file format designed for relatively basic images</div>
+                        <div>Supports up to 8 bits per pixel and contains 256 indexed colours for lossless compression</div>
+                        <div>Allows images or frames to be combined for animations</div>
+                        <div>Also supports transparency</div>
+                        <div>Good for logos with limited number of colours</div>
+                    </dd>
+                    <dt>PNG</dt>
+                    <dd>
+                        <div>Stands for "Portable Graphics Format</div>
+                        <div>Is most frequently used uncompressed raster image format</div>
+                        <div>Lossless data compression format created to replace GIF</div>
+                        <div>Ideal for flat/gradientless images with hard edges such as logos</div>
+                    </dd>
+                    <dt>JPG</dt>
+                </dl>
+            </dd>
+        </dl>  
+
     </section>
 
     <footer>
