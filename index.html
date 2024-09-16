@@ -215,6 +215,84 @@
                 </ul>
             </dd>
                     <!-- Where I left off -->
+            <dt><div>Preformatted Text</div></dt>
+            <dd>
+                <div>The "pre" element defines preformatted text</div>
+                <div>Unlike regular HTML, text enclosed in "pre" preserves spaces and line breaks</div>
+                <div>No attributes except style if CSS is required</div>
+                <pre>
+                    EXAMPLE this is          an Example
+                    And stuff     like this
+                </pre>
+            </dd>
+            <dt><div>Computer Code Tags</div></dt>
+            <dd>
+                <div>HTML has elements for defining user input and computer code</div>
+                <div>CSS is recommended for better effect and their only attribute is style</div>
+                <div>All are monospace except "var" is italic</div>
+                <div>These tags do not preserve spacing and line changes</div>
+                <div>Tags must be placed inside "pre" tag</div>
+                <ul>
+                    <li><div>"code" for general code scripts</div></li>
+                    <li><div>"kbd" for keyboard input sequences</div></li>
+                    <li><div>"samp" for program output</div></li>
+                    <li><div>"var" for variables inside text</div></li>
+                </ul>
+            </dd>
+            <dt><div>Special UTF-8 Characters</div></dt>
+            <dd>
+                <div>To make special characters and accented letters, special set of codes called character entities used to insert into HTML code</div>
+                <div>The browser will display the codes as corresponding symbols or characters</div>
+                <div>Some entities have names and others can be referenced by decimal or hex codes</div>
+            </dd>
+            <dt><div>HTML Tables</div></dt>
+            <dd>
+                <div>Arranges data into rows and columns</div>
+                <div>"table" tag defines a table</div>
+                <div>Inside "table" tag are table rows "tr" and table data cells "td"</div>
+                <div>With CSS styles you can set the borders, sizes, and spacing and padding</div>
+            </dd>
+            <dt><div>Tables: Rows and Captions</div></dt>
+            <dd>
+                <div>"caption" element defines a table caption</div>
+                <div>"tr" element defines a row in a table</div>
+                <div>It contains "td" or "th" elements inside</div>
+                <table>
+                    <caption>Table Caption</caption>
+                    <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th></tr>
+                    <tr><td>Cell 1</td><td colspan="2">Cell 2</td><td>Cell 3</td></tr>
+                </table>
+            </dd>
+            <dt><div>Tables: Header Cells</div></dt>
+            <dd>
+                <div>"th" elements defines table header cell in a table</div>
+                <div>The text within "th" usually centered bold text</div>
+                <div>Attributes are colspan, number of columns the cell should span, and rowspan, the number of rows the cell should span</div>
+            </dd>
+            <dt><div>Tables: Table Data Cells</div></dt>
+            <dd>
+                <div>"td" element defines a cell in a table</div>
+                <div>Like "th" it also uses colspan and rowspan attributes to create asymmetric tables</div>
+            </dd>
+            <dt><div>Inline Frames</div></dt>
+            <dd>
+                <div>"iframe" tag create an inline frame that containes another HTML document</div>
+                <div>Main attributes are:</div>
+                <ul>
+                    <li><div>width, height: The width or height of the frame in pixels</div></li>
+                    <li><div>title: The frame title for use by screen readers</div></li>
+                    <li><div>name: The name of the fram to reference it from scripts</div></li>
+                    <li><div>src: The URL of the content of the frame</div></li>
+                </ul>
+            </dd>
+            <dt><div>HTML Videos</div></dt>
+            <dd>
+                <div>"video" tag embeds a video content on a page</div>
+                <div>*controls* attribute adds control buttons like play, pause, and volume</div>
+                <div>"video" tag allows multiple sources(file formats) with the "source" tag</div>
+                <div>The browser will use the first recognized format</div>
+                <img src="Notes.png" alt="Video Notes" style="height:100px; width:auto;">
+            </dd>
         </dl>  
 
     </section>
