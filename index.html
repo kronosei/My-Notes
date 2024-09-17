@@ -214,7 +214,6 @@
                     <li>Another example is for specific tool authentication</li>
                 </ul>
             </dd>
-                    <!-- Where I left off -->
             <dt><div>Preformatted Text</div></dt>
             <dd>
                 <div>The "pre" element defines preformatted text</div>
@@ -291,7 +290,25 @@
                 <div>*controls* attribute adds control buttons like play, pause, and volume</div>
                 <div>"video" tag allows multiple sources(file formats) with the "source" tag</div>
                 <div>The browser will use the first recognized format</div>
-                <img src="Notes.png" alt="Video Notes" style="height:100px; width:auto;">
+                <div>There is also a "track" tag for subtitles in WebVTT format</div>
+                <video width="480" height="360" controls>
+                    <source src="lefische.mp4" type="video/mp4">
+                    Sorry. Video tag is not supported
+                </video>
+            </dd>
+            <dt><div>HTML Videos: Source</div></dt>
+            <dd>
+                <div>"source" tag used to specify multiple media resources for media elements such as "video", "audio", and "picture</div>
+                <div>"source" tag allows you to specify alternative sources that the browser may choose from</div>
+                <div>The browser will choose the first source it supports</div>
+                <div>Attributes are *src* for the source of the vid and *type* for the MIME type of it</div>
+            </dd>
+            <dt><div>HTML Videos: Formats</div></dt>
+            <dd>
+                <div>Video formats HTML supports are MP4(video/mp4), WebM(video/webm), and Ogg(video/ogg)</div>
+                <div>Mp4 is the most universally supported video format for all platforms</div>
+                <div>Some hosting servers require advanced configuration to allow videos</div>
+                <div>Text between the "video" tags will only be displayed when browsers does not support the video</div>
             </dd>
         </dl>  
 
