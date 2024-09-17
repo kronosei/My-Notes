@@ -291,7 +291,7 @@
                 <div>"video" tag allows multiple sources(file formats) with the "source" tag</div>
                 <div>The browser will use the first recognized format</div>
                 <div>There is also a "track" tag for subtitles in WebVTT format</div>
-                <video width="480" height="360" controls>
+                <video width="480" height="360" controls loop>
                     <source src="lefische.mp4" type="video/mp4">
                     Sorry. Video tag is not supported
                 </video>
@@ -309,6 +309,33 @@
                 <div>Mp4 is the most universally supported video format for all platforms</div>
                 <div>Some hosting servers require advanced configuration to allow videos</div>
                 <div>Text between the "video" tags will only be displayed when browsers does not support the video</div>
+            </dd>
+            <dt><div>Video Tag Attributes</div></dt>
+            <dd>
+                <div>*autoplay*: video will start playing as soon as it is ready</div>
+                <div>*controls*: video controls will be displayed</div>
+                <div>*height*, *width*: height and width of video in pixels. Aspect ratio must be the same as original content</div>
+                <div>*loop*: video will start over again every time it finishes</div>
+                <div>*muted*: video will play with no sound</div>
+                <div>*poster*: specifies the URL of a still image to be shown before play</div>
+            </dd>
+            <dt><div>HTML Audio</div></dt>
+            <dd>
+                <div>"audio" element embeds an audio file on a web page</div>
+                <div>Supported formats are mp3(audio/mpeg), wav(audio/wav), aac(audio/aac), and ogg(audio/ogg)</div>
+                <div>mp3 is universal and most supported audio format</div>
+                <audio controls autoplay loop>
+                    <source src="Funiculi Funicula 1.mp3" type="audio/mpeg">
+                    Audio not supported or something is wrong
+                </audio>
+            </dd>
+            <dt><div>Audio Tag Attributes</div></dt>
+            <dd>
+                <div>*autoplay*: audio will start playing as soon as it is ready</div>
+                <div>*controls*: audio controls will be displayed</div>
+                <div>*loop*: audio will repeat once it finishes</div>
+                <div>*mute*: audio will play silent</div>
+                <div>Audio tag also supports live streaming</div>
             </dd>
         </dl>  
 
