@@ -5,347 +5,469 @@
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/jpg" href="HTML logo.jpg">
     <title>CPS 530 Notes Webpage</title>
+    <style>
+        dt {font-weight:bold}
+        a[href="youtube"] {color:red}
+        ul {list-style:none; padding:0; margin:0}
+        dl {list-style:none; padding:0; margin:0}
+    </style>
 </head>
-<body>
-    <header>
-        <div style="text-align:center; font-size:56px; font-weight:bolder;">CPS 530 Notes   
-        <img src="HTML logo.jpg" alt="HTML logo" style="height:100px; width:auto;">
-        </div>
-        <hr>
-    </header>
-    
-    <section>
-        <!-- Notes Section -->
-        <div style="font-size:30px; font-weight:bold;">HTML Notes</div>
-        <dl>
-            <dt><div>HTML stands for Hypertext Markup Language</div></dt>
-            <dt><div>Each block of code is enclosed by 2 tags on either end</div></dt>
-            <dt><div>Tags are enclosed in less than or greater than symbols</div></dt>
-            <dt><div>The closing tag will have a forwardslash(/)</div></dt>
-            <dt>
-                <div>Skeleton tags</div>
-            </dt>
-            <dd>
-                <div>html: Designates that this file is an html file</div>
-                <div>head: An introduction to the webpage that contain settings such as the webpage title</div>
-                <div>title: Designates the title of the webpage which will be shown in the tab of the webpage
-                        in the title bar
-                    </div>
-                <div>body: Designates the main section of the webpage were all the content is</div>
-            </dd>
-            <dt><div>Character Sets</div></dt>
-            <dd>
-                <div>Character encoding system that consists of a code that pairs each character from a list</div>
-                <div>UTF-8: Unicode is most common for encoding</div>
-                <div>To specify character set, use meta tag</div>
-            </dd>
-            <dt><div>Comments</div></dt>
-            <dd>
-                <div>Comment tag is used for comments and is ignored by browser</div>
-                <div>Comment tag is < ! -- text -- ></div>
-            </dd>
-            <dt><div>Colours</div></dt>
-            <dd>
-                <div>Colours can be used for many things like background, text, and borders</div>
-                <div>Each colour represented by 6 character hex number like #00ff00</div>
-                <div>Colour names like black or blue can be used</div>
-            </dd>
-            <dt><div>Nested Tags and Header Tags</div></dt>
-            <dd>
-                <div>Multiple tags can be nested and should never overlap</div>
-                <div>Header Tags can be used for page and sections headings</div>
-                <div>h1 is largest with h6 being smallest by default</div>
-            </dd>
-            <dt><div>Page Section Tags</div></dt>
-            <dd>
-                <div>br: Simple line break</div>
-                <div>div: Division that will share common characteristics and stand on its own</div>
-                <div>p: Paragraph that will share common characteristics and will have an empty line at top and bottom</div>
-                <div>span: Text sharing common characteristics with no line breaks at all</div>
-            </dd>
-            <dt><div>Semantic Tags</div></dt>
-            <dd>
-                <div>Describe the meaning of the section. Ex. article, aside, header, footer</div>
-                <div>Almost all behave like div</div>
-                <div>Tags like figure/figcaption and mark behave differently</div>
-                <div>Figure used to associate an image and a caption while mark highlights text</div>
-                <div>Makes code easier to read and understand</div>
-                <div>Summary tag defines a visible heading for hte details element as shown below</div>
-                <details>
-                    <summary>Example Summary</summary>
-                    <div>Example detail</div>
-                </details>
-            </dd>
-            <dt><div>Horizontal Rule</div></dt>
-            <dd>
-                <div>Used to make a horizontal bar across width of the screen</div>
-                <div>Good for separating sections</div>
-            </dd>
-            <dt><div>Fonts</div></dt>
-            <dd>
-                <div>Fonts and colours can be defined using the style attribute</div>
-            </dd>
-            <dt><div>Text Alignment</div></dt>
-            <dd>
-                <div>Allows you to change where the text is aligned on the webpage</div>
-            </dd>
-            <dt><div>Lists/Unordered Lists</div></dt>
-            <dd>
-                <div>Great way to keep a page organized and are indented from alignment</div>
-                <div>Can contain one or more items and use bullet points to list out the items</div>
-                <div> li tag is used to denote an item while the ul tag is used to denot the unordered list</div>
-                <ul>
-                    <li><div>Example</div></li>
-                </ul>
-            </dd>
-            <dt><div>Ordered Lists</div></dt>
-            <dd>
-                <div>Uses the ol tag and uses numerical characters to list items</div>
-                <ol>
-                    <li><div>Example 1</div></li>
-                    <li><div>Example 2</div></li>
 
-                </ol>
-            </dd>
-            <dt><div>Nested Lists</div></dt>
-            <dd>
-                <div>Lists can be nested within another list</div>
-                <div>Each nested list will be indented from the one before</div>
-                <ul>
-                    <li><div>Example Superlist</div>
-                        <ul>
-                            <li><div>Example Nested List</div></li>
-                        </ul>
-                    </li>
-                </ul>
-            </dd>
-            <dt><div>Definition Lists</div></dt>
-            <dd>
-                <div>A type of list that has a title line and a data area</div>
-                <div>Title line uses dt tag and data area uses dd tag</div>
-            </dd>
-            <dt>Image Formats</dt>
-            <dd>
-                <div>There are 7 main supported types of images for the web</div>
-                <div>There are other types but they have limited to no support on some browsers</div>
-                <dl><div>Types of Image Formats</div>
-                    <dt>GIF</dt>
-                    <dd>
-                        <div>Stands for "Graphics Interchage Format"</div>
-                        <div>Raster file format designed for relatively basic images</div>
-                        <div>Supports up to 8 bits per pixel and contains 256 indexed colours for lossless compression</div>
-                        <div>Allows images or frames to be combined for animations</div>
-                        <div>Also supports transparency</div>
-                        <div>Good for logos with limited number of colours</div>
-                    </dd>
-                    <dt>PNG</dt>
-                    <dd>
-                        <div>Stands for "Portable Graphics Format</div>
-                        <div>Is most frequently used uncompressed raster image format</div>
-                        <div>Lossless data compression format created to replace GIF</div>
-                        <div>Ideal for flat/gradientless images with hard edges such as logos</div>
-                    </dd>
-                    <dt>JPG</dt>
-                    <dd>
-                        <div>Stands for "Joint Photographic Experts Group"</div>
-                        <div>Standard format for containing lossy and compressed image data</div>
-                        <div>Maintains reasonable image quality with millions of colours despite reduction in file size</div>
-                        <div>Designed to efficiently store and compress images and artwork</div>
-                        <div>Good at compressing images with a lot of colours and gradients</div>
-                    </dd>
-                    <!--Add more formats later but not important rn-->
-                </dl>
-            </dd>
-            <dt><div>The Image tag</div></dt>
-            <dd>
-                <div>Represented as img and places an image on the page</div>
-                <div>Attributes src and alt are required</div>
+<body style="background-color:rgb(231, 255, 187);">
+    <div style="margin:5px;">
+        <header>
+            <div style="text-align:center; font-size:56px; font-weight:bolder; padding:5px; border:5px solid black; border-bottom:2px solid black; box-sizing:content-box;">CPS 530 Notes   
+            <img src="HTML logo.jpg" alt="HTML logo" style="height:100px; width:auto;">
+            </div>
+        </header>
+        <nav>
+            <div style="border:5px solid black; border-top:3px solid black; border-bottom:2px solid black; padding:10px;">
                 <dl>
-                    <dt><div>Attributes of img tag</div></dt>
+                    <dt>Sections:</dt>
                     <dd>
-                        <div>src: URL of image</div>
-                        <div>alt: short description of image</div>
-                        <div>height: height of image in pixels or %</div>
-                        <div>width: width of image in pixels or %</div>
+                        <a href="#HtmlNotes">HTML Notes</a>
                     </dd>
                 </dl>
-            </dd>
-            <dt><div>Favicon Images</div></dt>
-            <dd>
-                <div>Favicon, aka. favourite icon, is the small image displayed next to the title in the tab</div>
-                <div>Small resolution image and should be high contrast</div>
-                <div>Any image format can be used</div>
-                <div>"link" tag is used to link favicon image to the page and should be placed in head section</div>
-            </dd>
-            <dt><div>Links and Anchors</div></dt>
-            <dd>
-                <div>HTML links or hyperlinks, used to connect web pages and allow the user to navigate between pages or resources</div>
-                <div>Created using the "a" tag with "href"</div>
-                <div>Both text and images can be used as a link</div>
-                <div>Relative link uses page name as a target and is local to the host</div>
-                <div>Absolute link uses a URL as the target and must be complete using the protocol (https://)</div>
-                <div>Internal/Anchor link is useful for long pages and is used to link to another location on the same page</div>
-                <div>Example of Relative Link: Will be added soon</div>
-                <div>Example of Absolute Link:
-                    <a href="https://www.youtube.com/watch?v=uHgt8giw1LY&pp=ygUgbmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXAgbm8gYWQ%3D">Example Absolute Link</a>
-                    </div>
-                <div>Example of Internal Link:
-                    <a href="#top">Go to the top</a>
+            </div>
+        </nav>
+        
+        <section>
+            <!--NOTES SECTION-->
+            <div style="border:5px solid black;">
+                <!-- HTML NOTES SECTION -->
+                <div id="#HtmlNotes" style="border-top:3px solid black; border-bottom:2px solid black; padding:10px;">
+                    <div style="font-size:30px; font-weight:bold;">HTML Notes</div>
+                    <dl>
+                        <dt><div>HTML stands for Hypertext Markup Language</div></dt>
+                        <dt><div>Each block of code is enclosed by 2 tags on either end</div></dt>
+                        <dt><div>Tags are enclosed in less than or greater than symbols</div></dt>
+                        <dt><div>The closing tag will have a forwardslash(/)</div></dt>
+                        <dt>
+                            <div>Skeleton tags</div>
+                        </dt>
+                        <dd>
+                            <div>html: Designates that this file is an html file</div>
+                            <div>head: An introduction to the webpage that contain settings such as the webpage title</div>
+                            <div>title: Designates the title of the webpage which will be shown in the tab of the webpage
+                                    in the title bar
+                                </div>
+                            <div>body: Designates the main section of the webpage were all the content is</div>
+                        </dd>
+                        <dt><div>Character Sets</div></dt>
+                        <dd>
+                            <div>Character encoding system that consists of a code that pairs each character from a list</div>
+                            <div>UTF-8: Unicode is most common for encoding</div>
+                            <div>To specify character set, use meta tag</div>
+                        </dd>
+                        <dt><div>Comments</div></dt>
+                        <dd>
+                            <div>Comment tag is used for comments and is ignored by browser</div>
+                            <div>Comment tag is < ! -- text -- ></div>
+                        </dd>
+                        <dt><div>Colours</div></dt>
+                        <dd>
+                            <div>Colours can be used for many things like background, text, and borders</div>
+                            <div>Each colour represented by 6 character hex number like #00ff00</div>
+                            <div>Colour names like black or blue can be used</div>
+                        </dd>
+                        <dt><div>Nested Tags and Header Tags</div></dt>
+                        <dd>
+                            <div>Multiple tags can be nested and should never overlap</div>
+                            <div>Header Tags can be used for page and sections headings</div>
+                            <div>h1 is largest with h6 being smallest by default</div>
+                        </dd>
+                        <dt><div>Page Section Tags</div></dt>
+                        <dd>
+                            <div>br: Simple line break</div>
+                            <div>div: Division that will share common characteristics and stand on its own</div>
+                            <div>p: Paragraph that will share common characteristics and will have an empty line at top and bottom</div>
+                            <div>span: Text sharing common characteristics with no line breaks at all</div>
+                        </dd>
+                        <dt><div>Semantic Tags</div></dt>
+                        <dd>
+                            <div>Describe the meaning of the section. Ex. article, aside, header, footer</div>
+                            <div>Almost all behave like div</div>
+                            <div>Tags like figure/figcaption and mark behave differently</div>
+                            <div>Figure used to associate an image and a caption while mark highlights text</div>
+                            <div>Makes code easier to read and understand</div>
+                            <div>Summary tag defines a visible heading for hte details element as shown below</div>
+                            <details>
+                                <summary>Example Summary</summary>
+                                <div>Example detail</div>
+                            </details>
+                        </dd>
+                        <dt><div>Horizontal Rule</div></dt>
+                        <dd>
+                            <div>Used to make a horizontal bar across width of the screen</div>
+                            <div>Good for separating sections</div>
+                        </dd>
+                        <dt><div>Fonts</div></dt>
+                        <dd>
+                            <div>Fonts and colours can be defined using the style attribute</div>
+                        </dd>
+                        <dt><div>Text Alignment</div></dt>
+                        <dd>
+                            <div>Allows you to change where the text is aligned on the webpage</div>
+                        </dd>
+                        <dt><div>Lists/Unordered Lists</div></dt>
+                        <dd>
+                            <div>Great way to keep a page organized and are indented from alignment</div>
+                            <div>Can contain one or more items and use bullet points to list out the items</div>
+                            <div> li tag is used to denote an item while the ul tag is used to denot the unordered list</div>
+                            <ul>
+                                <li><div>Example</div></li>
+                            </ul>
+                        </dd>
+                        <dt><div>Ordered Lists</div></dt>
+                        <dd>
+                            <div>Uses the ol tag and uses numerical characters to list items</div>
+                            <ol>
+                                <li><div>Example 1</div></li>
+                                <li><div>Example 2</div></li>
+
+                            </ol>
+                        </dd>
+                        <dt><div>Nested Lists</div></dt>
+                        <dd>
+                            <div>Lists can be nested within another list</div>
+                            <div>Each nested list will be indented from the one before</div>
+                            <ul>
+                                <li><div>Example Superlist</div>
+                                    <ul>
+                                        <li><div>Example Nested List</div></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </dd>
+                        <dt><div>Definition Lists</div></dt>
+                        <dd>
+                            <div>A type of list that has a title line and a data area</div>
+                            <div>Title line uses dt tag and data area uses dd tag</div>
+                        </dd>
+                        <dt>Image Formats</dt>
+                        <dd>
+                            <div>There are 7 main supported types of images for the web</div>
+                            <div>There are other types but they have limited to no support on some browsers</div>
+                            <dl><div>Types of Image Formats</div>
+                                <dt>GIF</dt>
+                                <dd>
+                                    <div>Stands for "Graphics Interchage Format"</div>
+                                    <div>Raster file format designed for relatively basic images</div>
+                                    <div>Supports up to 8 bits per pixel and contains 256 indexed colours for lossless compression</div>
+                                    <div>Allows images or frames to be combined for animations</div>
+                                    <div>Also supports transparency</div>
+                                    <div>Good for logos with limited number of colours</div>
+                                </dd>
+                                <dt>PNG</dt>
+                                <dd>
+                                    <div>Stands for "Portable Graphics Format</div>
+                                    <div>Is most frequently used uncompressed raster image format</div>
+                                    <div>Lossless data compression format created to replace GIF</div>
+                                    <div>Ideal for flat/gradientless images with hard edges such as logos</div>
+                                </dd>
+                                <dt>JPG</dt>
+                                <dd>
+                                    <div>Stands for "Joint Photographic Experts Group"</div>
+                                    <div>Standard format for containing lossy and compressed image data</div>
+                                    <div>Maintains reasonable image quality with millions of colours despite reduction in file size</div>
+                                    <div>Designed to efficiently store and compress images and artwork</div>
+                                    <div>Good at compressing images with a lot of colours and gradients</div>
+                                </dd>
+                                <!--Add more formats later but not important rn-->
+                            </dl>
+                        </dd>
+                        <dt><div>The Image tag</div></dt>
+                        <dd>
+                            <div>Represented as img and places an image on the page</div>
+                            <div>Attributes src and alt are required</div>
+                            <dl>
+                                <dt><div>Attributes of img tag</div></dt>
+                                <dd>
+                                    <div>src: URL of image</div>
+                                    <div>alt: short description of image</div>
+                                    <div>height: height of image in pixels or %</div>
+                                    <div>width: width of image in pixels or %</div>
+                                </dd>
+                            </dl>
+                        </dd>
+                        <dt><div>Favicon Images</div></dt>
+                        <dd>
+                            <div>Favicon, aka. favourite icon, is the small image displayed next to the title in the tab</div>
+                            <div>Small resolution image and should be high contrast</div>
+                            <div>Any image format can be used</div>
+                            <div>"link" tag is used to link favicon image to the page and should be placed in head section</div>
+                        </dd>
+                        <dt><div>Links and Anchors</div></dt>
+                        <dd>
+                            <div>HTML links or hyperlinks, used to connect web pages and allow the user to navigate between pages or resources</div>
+                            <div>Created using the "a" tag with "href"</div>
+                            <div>Both text and images can be used as a link</div>
+                            <div>Relative link uses page name as a target and is local to the host</div>
+                            <div>Absolute link uses a URL as the target and must be complete using the protocol (https://)</div>
+                            <div>Internal/Anchor link is useful for long pages and is used to link to another location on the same page</div>
+                            <div>Example of Relative Link: Will be added soon</div>
+                            <div>Example of Absolute Link:
+                                <a href="https://www.youtube.com/watch?v=uHgt8giw1LY&pp=ygUgbmV2ZXIgZ29pbmcgdG8gZ2l2ZSB5b3UgdXAgbm8gYWQ%3D">Example Absolute Link</a>
+                                </div>
+                            <div>Example of Internal Link:
+                                <a href="#top">Go to the top</a>
+                            </div>
+                        </dd>
+                        <dt><div>The Meta Tag</div></dt>
+                        <dd>
+                            <div>The "meta" element provides meta-information about the page</div>
+                            <div>Includes things such as description, character set, viewport settings, and refresh rates</div>
+                            <div>Always goes inside the head element and metadata are passed as name/value pairs</div>
+                            <div>Meta tag attributes:</div>
+                            <ul>
+                                <li>name: specifies a name for the metadata</li>
+                                <li>content: specifies value associated with the name or http-equiv attribute</li>
+                                <li>charset: specifies character set encoding</li>
+                                <li>http-equiv: specifies some action to perform</li>
+                            </ul>
+                            <div>Exmaples:</div>
+                            <ul>
+                                <li>use "width=device-width" to make page look good on all devices</li>
+                                <li>http-equiv attribute used to simulate a response header</li>
+                                <li>'http-equiv="refresh" content="5"' refreshes the page every 5 seconds</li>
+                                <li>'http-equiv="refresh" content="10; url=example.link"' redirects the user to a new page after 10 sec delay</li>
+                                <li>Another example is for specific tool authentication</li>
+                            </ul>
+                        </dd>
+                        <dt><div>Preformatted Text</div></dt>
+                        <dd>
+                            <div>The "pre" element defines preformatted text</div>
+                            <div>Unlike regular HTML, text enclosed in "pre" preserves spaces and line breaks</div>
+                            <div>No attributes except style if CSS is required</div>
+                            <pre>
+                                EXAMPLE this is          an Example
+                                And stuff     like this
+                            </pre>
+                        </dd>
+                        <dt><div>Computer Code Tags</div></dt>
+                        <dd>
+                            <div>HTML has elements for defining user input and computer code</div>
+                            <div>CSS is recommended for better effect and their only attribute is style</div>
+                            <div>All are monospace except "var" is italic</div>
+                            <div>These tags do not preserve spacing and line changes</div>
+                            <div>Tags must be placed inside "pre" tag</div>
+                            <ul>
+                                <li><div>"code" for general code scripts</div></li>
+                                <li><div>"kbd" for keyboard input sequences</div></li>
+                                <li><div>"samp" for program output</div></li>
+                                <li><div>"var" for variables inside text</div></li>
+                            </ul>
+                        </dd>
+                        <dt><div>Special UTF-8 Characters</div></dt>
+                        <dd>
+                            <div>To make special characters and accented letters, special set of codes called character entities used to insert into HTML code</div>
+                            <div>The browser will display the codes as corresponding symbols or characters</div>
+                            <div>Some entities have names and others can be referenced by decimal or hex codes</div>
+                        </dd>
+                        <dt><div>HTML Tables</div></dt>
+                        <dd>
+                            <div>Arranges data into rows and columns</div>
+                            <div>"table" tag defines a table</div>
+                            <div>Inside "table" tag are table rows "tr" and table data cells "td"</div>
+                            <div>With CSS styles you can set the borders, sizes, and spacing and padding</div>
+                        </dd>
+                        <dt><div>Tables: Rows and Captions</div></dt>
+                        <dd>
+                            <div>"caption" element defines a table caption</div>
+                            <div>"tr" element defines a row in a table</div>
+                            <div>It contains "td" or "th" elements inside</div>
+                            <table style="border:2px solid black; padding:3px; background-color: darkgrey;">
+                                <caption>Table Caption</caption>
+                                <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th></tr>
+                                <tr><td>Cell 1</td><td colspan="2">Cell 2</td><td>Cell 3</td></tr>
+                            </table>
+                        </dd>
+                        <dt><div>Tables: Header Cells</div></dt>
+                        <dd>
+                            <div>"th" elements defines table header cell in a table</div>
+                            <div>The text within "th" usually centered bold text</div>
+                            <div>Attributes are colspan, number of columns the cell should span, and rowspan, the number of rows the cell should span</div>
+                        </dd>
+                        <dt><div>Tables: Table Data Cells</div></dt>
+                        <dd>
+                            <div>"td" element defines a cell in a table</div>
+                            <div>Like "th" it also uses colspan and rowspan attributes to create asymmetric tables</div>
+                        </dd>
+                        <dt><div>Inline Frames</div></dt>
+                        <dd>
+                            <div>"iframe" tag create an inline frame that containes another HTML document</div>
+                            <div>Main attributes are:</div>
+                            <ul>
+                                <li><div>width, height: The width or height of the frame in pixels</div></li>
+                                <li><div>title: The frame title for use by screen readers</div></li>
+                                <li><div>name: The name of the fram to reference it from scripts</div></li>
+                                <li><div>src: The URL of the content of the frame</div></li>
+                            </ul>
+                        </dd>
+                        <dt><div>HTML Videos</div></dt>
+                        <dd>
+                            <div>"video" tag embeds a video content on a page</div>
+                            <div>*controls* attribute adds control buttons like play, pause, and volume</div>
+                            <div>"video" tag allows multiple sources(file formats) with the "source" tag</div>
+                            <div>The browser will use the first recognized format</div>
+                            <div>There is also a "track" tag for subtitles in WebVTT format</div>
+                            <video width="480" height="360" controls loop>
+                                <source src="lefische.mp4" type="video/mp4">
+                                Sorry. Video tag is not supported
+                            </video>
+                        </dd>
+                        <dt><div>HTML Videos: Source</div></dt>
+                        <dd>
+                            <div>"source" tag used to specify multiple media resources for media elements such as "video", "audio", and "picture</div>
+                            <div>"source" tag allows you to specify alternative sources that the browser may choose from</div>
+                            <div>The browser will choose the first source it supports</div>
+                            <div>Attributes are *src* for the source of the vid and *type* for the MIME type of it</div>
+                        </dd>
+                        <dt><div>HTML Videos: Formats</div></dt>
+                        <dd>
+                            <div>Video formats HTML supports are MP4(video/mp4), WebM(video/webm), and Ogg(video/ogg)</div>
+                            <div>Mp4 is the most universally supported video format for all platforms</div>
+                            <div>Some hosting servers require advanced configuration to allow videos</div>
+                            <div>Text between the "video" tags will only be displayed when browsers does not support the video</div>
+                        </dd>
+                        <dt><div>Video Tag Attributes</div></dt>
+                        <dd>
+                            <div>*autoplay*: video will start playing as soon as it is ready</div>
+                            <div>*controls*: video controls will be displayed</div>
+                            <div>*height*, *width*: height and width of video in pixels. Aspect ratio must be the same as original content</div>
+                            <div>*loop*: video will start over again every time it finishes</div>
+                            <div>*muted*: video will play with no sound</div>
+                            <div>*poster*: specifies the URL of a still image to be shown before play</div>
+                        </dd>
+                        <dt><div>HTML Audio</div></dt>
+                        <dd>
+                            <div>"audio" element embeds an audio file on a web page</div>
+                            <div>Supported formats are mp3(audio/mpeg), wav(audio/wav), aac(audio/aac), and ogg(audio/ogg)</div>
+                            <div>mp3 is universal and most supported audio format</div>
+                            <audio controls autoplay loop>
+                                <source src="Funiculi Funicula 1.mp3" type="audio/mpeg">
+                                Audio not supported or something is wrong
+                            </audio>
+                        </dd>
+                        <dt><div>Audio Tag Attributes</div></dt>
+                        <dd>
+                            <div>*autoplay*: audio will start playing as soon as it is ready</div>
+                            <div>*controls*: audio controls will be displayed</div>
+                            <div>*loop*: audio will repeat once it finishes</div>
+                            <div>*mute*: audio will play silent</div>
+                            <div>Audio tag also supports live streaming</div>
+                        </dd>
+                    </dl>
                 </div>
-            </dd>
-            <dt><div>The Meta Tag</div></dt>
-            <dd>
-                <div>The "meta" element provides meta-information about the page</div>
-                <div>Includes things such as description, character set, viewport settings, and refresh rates</div>
-                <div>Always goes inside the head element and metadata are passed as name/value pairs</div>
-                <div>Meta tag attributes:</div>
-                <ul>
-                    <li>name: specifies a name for the metadata</li>
-                    <li>content: specifies value associated with the name or http-equiv attribute</li>
-                    <li>charset: specifies character set encoding</li>
-                    <li>http-equiv: specifies some action to perform</li>
-                </ul>
-                <div>Exmaples:</div>
-                <ul>
-                    <li>use "width=device-width" to make page look good on all devices</li>
-                    <li>http-equiv attribute used to simulate a response header</li>
-                    <li>'http-equiv="refresh" content="5"' refreshes the page every 5 seconds</li>
-                    <li>'http-equiv="refresh" content="10; url=example.link"' redirects the user to a new page after 10 sec delay</li>
-                    <li>Another example is for specific tool authentication</li>
-                </ul>
-            </dd>
-            <dt><div>Preformatted Text</div></dt>
-            <dd>
-                <div>The "pre" element defines preformatted text</div>
-                <div>Unlike regular HTML, text enclosed in "pre" preserves spaces and line breaks</div>
-                <div>No attributes except style if CSS is required</div>
-                <pre>
-                    EXAMPLE this is          an Example
-                    And stuff     like this
-                </pre>
-            </dd>
-            <dt><div>Computer Code Tags</div></dt>
-            <dd>
-                <div>HTML has elements for defining user input and computer code</div>
-                <div>CSS is recommended for better effect and their only attribute is style</div>
-                <div>All are monospace except "var" is italic</div>
-                <div>These tags do not preserve spacing and line changes</div>
-                <div>Tags must be placed inside "pre" tag</div>
-                <ul>
-                    <li><div>"code" for general code scripts</div></li>
-                    <li><div>"kbd" for keyboard input sequences</div></li>
-                    <li><div>"samp" for program output</div></li>
-                    <li><div>"var" for variables inside text</div></li>
-                </ul>
-            </dd>
-            <dt><div>Special UTF-8 Characters</div></dt>
-            <dd>
-                <div>To make special characters and accented letters, special set of codes called character entities used to insert into HTML code</div>
-                <div>The browser will display the codes as corresponding symbols or characters</div>
-                <div>Some entities have names and others can be referenced by decimal or hex codes</div>
-            </dd>
-            <dt><div>HTML Tables</div></dt>
-            <dd>
-                <div>Arranges data into rows and columns</div>
-                <div>"table" tag defines a table</div>
-                <div>Inside "table" tag are table rows "tr" and table data cells "td"</div>
-                <div>With CSS styles you can set the borders, sizes, and spacing and padding</div>
-            </dd>
-            <dt><div>Tables: Rows and Captions</div></dt>
-            <dd>
-                <div>"caption" element defines a table caption</div>
-                <div>"tr" element defines a row in a table</div>
-                <div>It contains "td" or "th" elements inside</div>
-                <table>
-                    <caption>Table Caption</caption>
-                    <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th></tr>
-                    <tr><td>Cell 1</td><td colspan="2">Cell 2</td><td>Cell 3</td></tr>
-                </table>
-            </dd>
-            <dt><div>Tables: Header Cells</div></dt>
-            <dd>
-                <div>"th" elements defines table header cell in a table</div>
-                <div>The text within "th" usually centered bold text</div>
-                <div>Attributes are colspan, number of columns the cell should span, and rowspan, the number of rows the cell should span</div>
-            </dd>
-            <dt><div>Tables: Table Data Cells</div></dt>
-            <dd>
-                <div>"td" element defines a cell in a table</div>
-                <div>Like "th" it also uses colspan and rowspan attributes to create asymmetric tables</div>
-            </dd>
-            <dt><div>Inline Frames</div></dt>
-            <dd>
-                <div>"iframe" tag create an inline frame that containes another HTML document</div>
-                <div>Main attributes are:</div>
-                <ul>
-                    <li><div>width, height: The width or height of the frame in pixels</div></li>
-                    <li><div>title: The frame title for use by screen readers</div></li>
-                    <li><div>name: The name of the fram to reference it from scripts</div></li>
-                    <li><div>src: The URL of the content of the frame</div></li>
-                </ul>
-            </dd>
-            <dt><div>HTML Videos</div></dt>
-            <dd>
-                <div>"video" tag embeds a video content on a page</div>
-                <div>*controls* attribute adds control buttons like play, pause, and volume</div>
-                <div>"video" tag allows multiple sources(file formats) with the "source" tag</div>
-                <div>The browser will use the first recognized format</div>
-                <div>There is also a "track" tag for subtitles in WebVTT format</div>
-                <video width="480" height="360" controls loop>
-                    <source src="lefische.mp4" type="video/mp4">
-                    Sorry. Video tag is not supported
-                </video>
-            </dd>
-            <dt><div>HTML Videos: Source</div></dt>
-            <dd>
-                <div>"source" tag used to specify multiple media resources for media elements such as "video", "audio", and "picture</div>
-                <div>"source" tag allows you to specify alternative sources that the browser may choose from</div>
-                <div>The browser will choose the first source it supports</div>
-                <div>Attributes are *src* for the source of the vid and *type* for the MIME type of it</div>
-            </dd>
-            <dt><div>HTML Videos: Formats</div></dt>
-            <dd>
-                <div>Video formats HTML supports are MP4(video/mp4), WebM(video/webm), and Ogg(video/ogg)</div>
-                <div>Mp4 is the most universally supported video format for all platforms</div>
-                <div>Some hosting servers require advanced configuration to allow videos</div>
-                <div>Text between the "video" tags will only be displayed when browsers does not support the video</div>
-            </dd>
-            <dt><div>Video Tag Attributes</div></dt>
-            <dd>
-                <div>*autoplay*: video will start playing as soon as it is ready</div>
-                <div>*controls*: video controls will be displayed</div>
-                <div>*height*, *width*: height and width of video in pixels. Aspect ratio must be the same as original content</div>
-                <div>*loop*: video will start over again every time it finishes</div>
-                <div>*muted*: video will play with no sound</div>
-                <div>*poster*: specifies the URL of a still image to be shown before play</div>
-            </dd>
-            <dt><div>HTML Audio</div></dt>
-            <dd>
-                <div>"audio" element embeds an audio file on a web page</div>
-                <div>Supported formats are mp3(audio/mpeg), wav(audio/wav), aac(audio/aac), and ogg(audio/ogg)</div>
-                <div>mp3 is universal and most supported audio format</div>
-                <audio controls autoplay loop>
-                    <source src="Funiculi Funicula 1.mp3" type="audio/mpeg">
-                    Audio not supported or something is wrong
-                </audio>
-            </dd>
-            <dt><div>Audio Tag Attributes</div></dt>
-            <dd>
-                <div>*autoplay*: audio will start playing as soon as it is ready</div>
-                <div>*controls*: audio controls will be displayed</div>
-                <div>*loop*: audio will repeat once it finishes</div>
-                <div>*mute*: audio will play silent</div>
-                <div>Audio tag also supports live streaming</div>
-            </dd>
-        </dl>  
 
-    </section>
+                
+                <!--CSS NOTES SECTION-->
+                <div style="border-top:3px solid black; border-bottom:2px solid black; padding:10px;">
+                    <div style="font-size:30px; font-weight:bold;">CSS Notes</div>
+                    <dl>
+                        <dt>What Is CSS?</dt>
+                        <dd>
+                            <div>Stands for Cascading Style Sheets</div>
+                            <div>This is because multiple style definitions will cascade into one</div>
+                            <div>Defines how to display HTML elements</div>
+                            <div>Stored in style sheets</div>
+                            <div>External style sheets are stored in .css files and can save a lot of work</div>
+                            <div>CSS1 made in 1996, CSS2 in 1998, CSS3 in 2012</div>
+                        </dd>
+                        <dt>Advantages of CSS</dt>
+                        <dd>
+                            <div>Allows developers to control the style and layout of multiple Web pages all at once</div>
+                            <div>A style can be created for each element and applied to many webpages if necessary</div>
+                            <div>To make global change, just change the style sheet and the affected pages are updated automatically</div>
+                            <div>Allows style information to be specified in many ways</div>
+                            <div>Styles can be specified inside a single HTML element, inside "head" element of an HTML page or externall CSS file</div>
+                            <div>Multiple external style sheets can be referenced inside a single HTML document</div>
+                        </dd>
+                        <dt>The Cascading Effect</dt>
+                        <dd>
+                            <div>All styles "cascade" into a new "virtual" stylesheet</div>
+                            <div>Rules are applied from lowest to highest priority:
+                                <ul>
+                                    <li>Browser default[lowest]</li>
+                                    <li>External style sheet</li>
+                                    <li>Internal style sheet(inside the "head" tag)</li>
+                                    <li>Inline style(style attribute inside HTML element)[highest: overrides other rules]</li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <dt>CSS Syntax</dt>
+                        <dd>
+                            <div>CSS syntax is made up of 3 parts</div>
+                            <div>selector {property:value}
+                                <ul>
+                                    <li>Selector is HTML element/tag that will be affected or a class/id</li>
+                                    <li>The property is an attribute that will be changed, each property can take a value</li>
+                                    <li>The property and value are separated by a colon, surrounded by braces</li>
+                                </ul>
+                            <div>EX: body {color:black}</div>
+                            </div>
+                            <div>If value has more than one word, quotes must be added around the value</div>
+                            <div>EX: div {font-family:'Roboto Mono';}</div>
+                            <div>Multiples properties are separated by a semicolon. The semicolon is optional after the last property</div>
+                            <div>EX: p {text-align:center; color:red;}</div>
+                            <div>Selectors that share a common style can be separated by commas</div>
+                            <div>EX: h1,h2,h3,h4,h5,h6 {color:green}</div>
+                        </dd>
+                        <dt>Comments in CSS</dt>
+                        <dd>
+                            <div>To comment in CSS, place the comment in /* and */ markers</div>
+                            <div>Tells browser they are notes(comments) and should not be rendered on the page</div>
+                        </dd>
+                        <dt>The Class Selector</dt>
+                        <dd>
+                            <div>Different styles can be defined for the same element using the class selector</div>
+                            <div>EX: p.right {text-align:right}<br>p.center {text-align:center}</div>
+                            <div>Class attribute is used to link the selected tag with a proper class. Specific class will apply only to the corresponding selector</div>
+                            <div>EX: p class="right" /p </div>
+                        </dd>
+                        <dt>General Classes and IDs</dt>
+                        <dd>
+                            <div>A general class(no selector tag) can be used by all HTML elements that uses that class</div>
+                            <div>EX: .center {text-align:center}</div>
+                            <div>The id selector is also available with a # instead of . and work the same way using the id attribute in the HTML tag instead of class</div>
+                            <div>EX: #blue {color:#0000ff;}</div>
+                            <div>Class and ID names cannot start with a number</div>
+                        </dd>
+                        <dt>Attribute Selectors</dt>
+                        <dd>
+                            <div>It is possible to style HTML elements with specific attributes or attribute values</div>
+                            <div>Examples:</div>
+                            <ul>
+                                <li>All "a" tags that have a title attribute are red<br>a[title] {color:red;}</li>
+                                <li>All links that contain torontomu are steelblue<br>a[href*="torontomu"] {color:steelblue;}</li>
+                                <li>All links to a .org domain are in italics(not case sensitive)<br>a[href$=".org" i] {font-style:italic}</li>
+                            </ul>
+                        </dd>
+                        <dt>Class vs. Id</dt>
+                        <dd>
+                            <div>In most contexts class and id behave the same way</div>
+                            <div>Classes can be reused and combined but ids are always unique in a web</div>
+                            <div>Ids can be referred by other objects like JavaScript, classes cannot</div>
+                        </dd>
+                        <dt>Multiple Classes and Ids</dt>
+                        <dd>
+                            <div>To assign multiple classes yo an element, separate each class</div>
+                            <div>ID and class can be used for the sasneen</div>
+                        </dd>
+                        <dt>External Style Sheets</dt>
+                        <dd>
+                            <div>External style sheet is ideal when a style is applied to many images</div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <hr>
-        <div style="text-align:center; font-family:Calibri; font-style:italic;">Notes by Laurence</div>
+        <footer>
+            <hr>
+            <div style="text-align:center; font-family:Calibri; font-style:italic;">Notes by Laurence</div>
 
-    </footer>
-
+        </footer>
+    </div>
 </body>
 
